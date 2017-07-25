@@ -12,23 +12,22 @@ function Pasajeros(nombres,apellidos,dni){
 
 
 function Bus(){
-    this pasajeros = [];
-    this.asientos=document.getElementById("td");
+    this.pasajeros = [];
+    this.numeroAsiento= -1;
 
 }
 
 
-var numeroAsiento = -1;
-var asientos = document.getElementsByTagName("td");
+// var asientos = document.getElementsByTagName("td");
 
-var pasajeros = new Array(32);
-for (var i = 0; i < 32; i++) {
-  pasajeros[i] = undefined;
-}
+// var pasajeros = new Array(32);
+// for (var i = 0; i < 32; i++) {
+//   pasajeros[i] = undefined;
+// }
 
-for (var i = 0; i < asientos.length; i++) {
-  asientos[i].addEventListener("click", redirect, false);
-}
+// for (var i = 0; i < asientos.length; i++) {
+//   asientos[i].addEventListener("click", redirect, false);
+// }
 
 function redirect(event) {
   numeroAsiento = event.target.textContent;
